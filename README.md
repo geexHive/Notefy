@@ -20,9 +20,7 @@ We encourage contributions from the community to enhance Notefy's repository of 
 2. Add your study resources to the appropriate subject folder.
 3. Submit a pull request.
 
-## Feedback
 
-Your feedback is valuable to us! If you encounter any issues, have suggestions for improvement, or want to contribute in other ways, please [open an issue](https://github.com/yourusername/notefy/issues) or reach out to us via email at [notefy@example.com](mailto:notefy@example.com).
 
 ## About Us
 
@@ -30,7 +28,7 @@ Notefy was created by a team of 2nd-year students passionate about helping 1st-y
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the HIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
