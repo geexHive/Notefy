@@ -10,7 +10,7 @@ Welcome to Notefy, your go-to platform for curated study resources created by 2n
 
 ## Getting Started
 
-To get started with Notefy, simply visit [https://example.com/notefy](https://example.com/notefy) and create an account. Explore various subjects and topics to find resources that best suit your needs.
+To get started with Notefy, simply visit [https://example.com/notefy](https://github.com/GEEXHIVE/Notefy) and create an account. Explore various subjects and topics to find resources that best suit your needs.
 
 ## Contributing
 
