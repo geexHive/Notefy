@@ -5,16 +5,38 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    background: black;
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    text-align: center;
+    background: rgb(2, 0, 36);
 }
 
+body {
+    width: 100%;
+    height: 100%;
+    --color: rgba(114, 114, 114, 0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 55px 55px;
+}
+
+/* Navbar Styles */
 .navbar {
-    background-color: #333;
+    top: 0;
+    width: 100%;
     color: white;
-    padding: 15px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 25px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+}
+
+.fy{
+    font-size: 45px;
+    color:rgb(133, 208, 240);
 }
 
 .container {
@@ -26,7 +48,8 @@ body {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 .nav-links {
@@ -35,44 +58,258 @@ body {
 }
 
 .nav-links li {
-    margin-left: 20px;
+    margin-left: 24px;
 }
 
 .nav-links a {
     color: white;
+    justify-content: space-around;
     text-decoration: none;
 }
 
-.content {
+.nav-links a:hover {
+    color:rgb(133, 208, 240);
+    transition: 0.5s;
+}
+
+/* Body styles */
+.division {
+    display: flex;
+    flex: 1;
+    margin-top: 180px;
+}
+
+.division-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
-    max-width: 800px;
-    margin: 20px auto;
 }
 
-.buttons {
-    margin-top: 20px;
+.division-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
-button {
-    padding: 10px 15px;
-    margin-right: 10px;
-    border: none;
-    background-color: #5cb85c;
-    color: white;
-    cursor: pointer;
+.division-right img{
+    background-size: cover;
+    background-position: center center;
+    height: 550px;
+    width: 550px;
+    box-shadow: 0 20px 5px 5px rgba(232, 226, 226, 0.2);
+    animation: animate 4s ease-in-out infinite;
+    transition: all 5s ease-in-out;
+
 }
 
-button:hover {
-    background-color: #4cae4c;
+.division-left img{
+    background-size: cover;
+    background-position: center center;
+    height: 550px;
+    width: 550px;
+    box-shadow: 0 20px 5px 5px rgba(232, 226, 226, 0.2);
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+
 }
 
-.footer {
+
+@keyframes animate{
+    0%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+
+.welcome {
+    color: rgb(133, 208, 240);
+    font-weight: bold;
     text-align: center;
-    padding: 10px 0;
-    background: #333;
-    color: #fff;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
+    margin-bottom: 40px;
 }
 
+.describe {
+        color: rgb(133, 208, 240);
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 40px;
+    
+}
+
+.explore {
+    margin-top: 50px;
+    margin-bottom: 90px;
+    color: rgb(133, 208, 240);  /*rgb(153, 191, 211); */
+    margin-top: 200px;
+}
+
+.button {
+    padding: 17px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    text-decoration: none;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 17px;
+    transition: all 0.5s ease;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.lower {
+    margin-bottom: 100px;
+}
+
+.button:hover {
+    letter-spacing: 3px;
+    background-color: rgb(133, 208, 240);    /*hsl(261deg 80% 48%);*/
+    color: hsl(0, 0%, 0%);
+    box-shadow: rgb(133, 208, 240) 0px 7px 29px 0px;
+}
+
+.button:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+
+/* Footer styles */
+.footer {
+    color: white;
+    background-color: black;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .container2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: justify;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.footer-links li {
+    margin-left: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color:rgb(133, 208, 240);
+    transition: 0.5s;
+}
+
+.geex {
+    margin-top: 80px;
+    font-size: 20px;
+    color: rgb(240, 246, 156);
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .division {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .division-left, .division-right {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .explore {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+    }
+
+    .division {
+        margin-top: 50px;
+    }
+
+    .explore {
+        margin-top: 50px;
+    }
+
+    .button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .footer {
+        font-size: 14px;
+        padding: 10px 0;
+    }
+
+    .geex {
+        font-size: 16px;
+    }
+}
