@@ -31,4 +31,4 @@ This project is licensed under the HIT License .
 
 ---
 
-Happy learning with Notefy! 📚✨
+Happy learning with Notefy.
