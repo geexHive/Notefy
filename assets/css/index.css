@@ -85,7 +85,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 10px 90px;
 }
 
 .division-right {
@@ -94,7 +94,15 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 10px 90px;
+}
+
+.introduction{
+    font-size: 20px;
+}
+
+.description{
+    font-size: 20px;
 }
 
 .division-right img{
@@ -105,8 +113,10 @@ body {
     box-shadow: 0 20px 5px 5px rgba(232, 226, 226, 0.2);
     animation: animate 4s ease-in-out infinite;
     transition: all 5s ease-in-out;
+    margin-left:-60px;
 
 }
+
 
 .division-left img{
     background-size: cover;
@@ -116,7 +126,12 @@ body {
     box-shadow: 0 20px 5px 5px rgba(232, 226, 226, 0.2);
     animation: animate 5s ease-in-out infinite;
     transition: all 1s ease-in-out;
+    margin-left:-60px;
 
+}
+
+br{
+    font-size: 20px;
 }
 
 
@@ -149,19 +164,22 @@ body {
 }
 
 .explore {
-    margin-top: 50px;
+   
     margin-bottom: 90px;
     color: rgb(133, 208, 240);  /*rgb(153, 191, 211); */
     margin-top: 200px;
+    
 }
 
 .button {
-    padding: 17px 40px;
+    padding: 17px 30px;
     border-radius: 50px;
     cursor: pointer;
     border: 0;
+    list-style: none;
     text-decoration: none;
     background-color: white;
+    color: rgb(133, 208, 240);
     box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
@@ -169,12 +187,17 @@ body {
     transition: all 0.5s ease;
     margin-left: 10px;
     margin-right: 10px;
+    text-shadow: 
+    0.4px 0.4px 0 #000, 
+    -0.4px -0.4px 0 rgb(133, 208, 240),
+    0.4px -0.4px 0 rgb(133, 208, 240),
+    -0.4px 0.4px 0 rgb(133, 208, 240);
 }
 
 .lower {
     margin-bottom: 100px;
 }
-
+  
 .button:hover {
     letter-spacing: 3px;
     background-color: rgb(133, 208, 240);    /*hsl(261deg 80% 48%);*/
@@ -182,14 +205,14 @@ body {
     box-shadow: rgb(133, 208, 240) 0px 7px 29px 0px;
 }
 
-.button:active {
+/*.button:active {
     letter-spacing: 3px;
     background-color: hsl(261deg 80% 48%);
     color: hsl(0, 0%, 100%);
     box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
     transform: translateY(10px);
     transition: 100ms;
-}
+}*/
 
 /* Footer styles */
 .footer {
